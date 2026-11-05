@@ -1,0 +1,22 @@
+{
+ "after_compile_masking": "time-aware Pauli twirl + no-pattern DD (8 pairs/gap)",
+ "best_of": 8,
+ "coupling_map": "good qubits (readout<=5%, sx<=1%, 2q<=5%)",
+ "dd_pairs": 8,
+ "decoys": 2,
+ "key_mode": "best",
+ "key_search": 300,
+ "methods": [
+  "original",
+  "inverse gates",
+  "composite gates",
+  "delayed gates",
+  "ECQCO",
+  "Q-MaskCut"
+ ],
+ "optimization_level": 3,
+ "padlocks": 2,
+ "q_maskcut": "best-TVD key, H on decoys, CutQC 2 fragments, RX pair at cut, one layout per fragment",
+ "seed": 42,
+ "shots": 8192
+}

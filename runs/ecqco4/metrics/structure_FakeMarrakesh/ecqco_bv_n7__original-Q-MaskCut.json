@@ -1,0 +1,27 @@
+[
+ {
+  "circuit": "ecqco_bv_n7",
+  "backend": "structure_FakeMarrakesh",
+  "n": 7,
+  "gates": 20,
+  "two_q": 6,
+  "coupling": "good qubits (94)",
+  "method": "Q-MaskCut",
+  "key_mode": "random",
+  "normged": 0.9312920089619119,
+  "ged2q": 0.42105263157894735,
+  "whole_depth": 117,
+  "qubits": 9,
+  "cuts": 1,
+  "widths": "6+4",
+  "fragments": 2,
+  "depth": 24,
+  "gates_compiled": 93,
+  "two_q_compiled": 5,
+  "swaps": 0,
+  "time_us": 2.928,
+  "max_fragment_width": 6,
+  "status": "ok",
+  "seconds": 0.8
+ }
+]

@@ -1,0 +1,250 @@
+[
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "original",
+  "fidelity": 0.9999981969562387,
+  "tvd_deobf": 0.0013427734375,
+  "tvd_obf": 0.0013427734375,
+  "tvd_obf_min": 0.0013427734375,
+  "tvd_ideal": 0.0,
+  "noise_floor": 0.0067138671875,
+  "normged_logical": 0.0,
+  "normged_logical_kind": "exact",
+  "normged": 0.0,
+  "ged2q": 0.0,
+  "depth": 153,
+  "gates_compiled": 258,
+  "two_q_compiled": 55,
+  "swaps": 12,
+  "qubits": 19,
+  "time_us": 8.616,
+  "operator_check": true,
+  "status": "ok",
+  "bits": {
+   "ideal": {
+    "1111111111111111110": 0.49999999999999706,
+    "1111111111111111111": 0.49999999999999706
+   },
+   "original": {
+    "1111111111111111110": 0.5013427734375,
+    "1111111111111111111": 0.4986572265625
+   }
+  },
+  "seconds": 172.5
+ },
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "inverse gates",
+  "fidelity": 0.9999992698425625,
+  "tvd_deobf": 0.0008544921875,
+  "tvd_obf": 0.0008544921875,
+  "tvd_obf_min": 0.0008544921875,
+  "tvd_ideal": 3.341771304121721e-14,
+  "noise_floor": 0.0067138671875,
+  "normged_logical": 0.9788082249265632,
+  "normged_logical_kind": "bound",
+  "normged": 0.9885824866956943,
+  "ged2q": 0.9887392360344447,
+  "depth": 5292,
+  "gates_compiled": 13700,
+  "two_q_compiled": 3626,
+  "swaps": 747,
+  "qubits": 19,
+  "time_us": 203.048,
+  "operator_check": null,
+  "decodable": true,
+  "status": "ok",
+  "bits": {
+   "compiler_view": {
+    "1111111111111111111": 0.5008544921875,
+    "1111111111111111110": 0.4991455078125
+   },
+   "reconstructed": {
+    "1111111111111111111": 0.5008544921875,
+    "1111111111111111110": 0.4991455078125
+   }
+  },
+  "seconds": 172.5
+ },
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "composite gates",
+  "fidelity": 0.9999992698425625,
+  "tvd_deobf": 0.0008544921875,
+  "tvd_obf": 0.0008544921875,
+  "tvd_obf_min": 0.0008544921875,
+  "tvd_ideal": 1.2129186544029835e-14,
+  "noise_floor": 0.0067138671875,
+  "normged_logical": 0.5779467680608364,
+  "normged_logical_kind": "bound",
+  "normged": 0.18478260869565216,
+  "ged2q": 0.0,
+  "depth": 151,
+  "gates_compiled": 255,
+  "two_q_compiled": 55,
+  "swaps": 12,
+  "qubits": 19,
+  "time_us": 8.472,
+  "operator_check": null,
+  "decodable": true,
+  "status": "ok",
+  "bits": {
+   "compiler_view": {
+    "1111111111111111111": 0.5008544921875,
+    "1111111111111111110": 0.4991455078125
+   },
+   "reconstructed": {
+    "1111111111111111111": 0.5008544921875,
+    "1111111111111111110": 0.4991455078125
+   }
+  },
+  "seconds": 172.5
+ },
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "delayed gates",
+  "fidelity": 0.9999951720004577,
+  "tvd_deobf": 0.002197265625,
+  "tvd_obf": 0.002197265625,
+  "tvd_obf_min": 0.002197265625,
+  "tvd_ideal": 4.321543123353422e-14,
+  "noise_floor": 0.0067138671875,
+  "normged_logical": 0.9747382794720073,
+  "normged_logical_kind": "bound",
+  "normged": 0.13768115942028986,
+  "ged2q": 0.0,
+  "depth": 160,
+  "gates_compiled": 258,
+  "two_q_compiled": 55,
+  "swaps": 12,
+  "qubits": 19,
+  "time_us": 8.796,
+  "operator_check": null,
+  "decodable": true,
+  "status": "ok",
+  "bits": {
+   "compiler_view": {
+    "1111111111111111110": 0.502197265625,
+    "1111111111111111111": 0.497802734375
+   },
+   "reconstructed": {
+    "1111111111111111110": 0.502197265625,
+    "1111111111111111111": 0.497802734375
+   }
+  },
+  "seconds": 172.5
+ },
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "ECQCO",
+  "fidelity": 0.9999999403953459,
+  "tvd_deobf": 0.000244140625,
+  "tvd_obf": 0.000244140625,
+  "tvd_obf_min": 0.000244140625,
+  "tvd_ideal": 0.0,
+  "noise_floor": 0.0067138671875,
+  "normged_logical": 0.9239204934886909,
+  "normged_logical_kind": "bound",
+  "normged": 0.16546762589928057,
+  "ged2q": 0.0,
+  "depth": 158,
+  "gates_compiled": 260,
+  "two_q_compiled": 55,
+  "swaps": 12,
+  "qubits": 19,
+  "time_us": 8.76,
+  "operator_check": null,
+  "decodable": false,
+  "status": "ok",
+  "bits": {
+   "compiler_view": {
+    "1111111111111111110": 0.500244140625,
+    "1111111111111111111": 0.499755859375
+   },
+   "reconstructed": {
+    "1111111111111111110": 0.500244140625,
+    "1111111111111111111": 0.499755859375
+   }
+  },
+  "seconds": 172.5
+ },
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "Q-MaskCut",
+  "twirl_gates_whole": 177,
+  "dd_gates_whole": 2082,
+  "key": "0010100000101001100",
+  "key_is_best": null,
+  "key_seed": 42,
+  "normged_logical": 0.2585034013605442,
+  "normged_logical_kind": "bound",
+  "normged": 0.930739299610895,
+  "ged2q": 0.2907801418439716,
+  "qubits": 21,
+  "decodable": true,
+  "twirl_gates_fragments": 404,
+  "dd_gates_fragments": 5484,
+  "cuts": 1,
+  "widths": "10+12",
+  "instances": 7,
+  "depth": 150,
+  "gates_compiled": 1049,
+  "two_q_compiled": 22,
+  "swaps": 4,
+  "time_us": 5.124,
+  "fidelity": 0.9946648756708217,
+  "tvd_deobf": 0.00538104772567749,
+  "tvd_obf": 0.9999999999999971,
+  "tvd_obf_pieces": [
+   0.9999999999999971
+  ],
+  "tvd_obf_min": 0.9999999999999971,
+  "tvd_ideal": 2.942091015256665e-15,
+  "noise_floor": 0.0067138671875,
+  "operator_check": "n/a: classical reconstruction (exact check: TVD_ideal)",
+  "status": "ok",
+  "bits": {
+   "compiler_view": {
+    "1101011111010110011": 0.500053346157074,
+    "1101011111010110010": 0.4946189522743225,
+    "1101011000101001100": 0.005327701568603516
+   },
+   "reconstructed": {
+    "1111111111111111111": 0.500053346157074,
+    "1111111111111111110": 0.4946189522743225,
+    "1111111000000000000": 0.005327701568603516
+   }
+  },
+  "seconds": 172.5
+ }
+]

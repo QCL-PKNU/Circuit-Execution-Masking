@@ -1,0 +1,5 @@
+benchmark,ECQCO (reported),Inverse gates (reported),Delayed gates (reported),Composite gates (reported),Q-MaskCut
+Bernstein-Vazirani,0.8637,0.942076,0.946548,0.581395,0.9313
+Grover,0.9386,0.964697,0.9459,0.835659,0.8917
+QAOA,0.8845,0.965272,0.960641,0.800948,0.869
+Shor,0.8389,0.902226,0.931884,0.632075,0.9188

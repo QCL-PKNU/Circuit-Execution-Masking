@@ -1,0 +1,211 @@
+{
+ "circuit": "bell_n4",
+ "calibration": "2026-10-24 23:11:05+09:00",
+ "target": "target_history(2026-10-26T12:40:00+09:00), account pknu4",
+ "key": "1000",
+ "key_seed": 51,
+ "key_tvd": 0.7071,
+ "K": 1,
+ "a_original": {
+  "native_gates": 40,
+  "layers": 13,
+  "duration_us": 3.092,
+  "ops": {
+   "rz": 17,
+   "sx": 15,
+   "cz": 5,
+   "x": 3
+  }
+ },
+ "b_protected_logical": {
+  "gates": 40,
+  "layers": 15,
+  "ops": {
+   "u3": 8,
+   "rx": 7,
+   "cx": 7,
+   "ry": 6,
+   "h": 5,
+   "x": 3,
+   "rz": 2,
+   "cz": 2
+  }
+ },
+ "b_compiled_masked": {
+  "native_gates": 135,
+  "layers": 29,
+  "duration_us": 3.172,
+  "normGED_vs_a": 0.7823,
+  "native_gates_before_masking": 51,
+  "layers_before_masking": 17,
+  "mask_pulses": 22,
+  "mask_gates": 66,
+  "twirl_gates": 18,
+  "twirl_x": 0,
+  "twirl_rz": 18
+ },
+ "cuts": [
+  {
+   "wire": 0,
+   "role": "data 0",
+   "ends": "F1",
+   "starts": "F2"
+  }
+ ],
+ "fragments": [
+  {
+   "fragment": "F1",
+   "wires": {
+    "data 0": 0,
+    "data 2": 1,
+    "ancilla": 2
+   },
+   "variants": 3,
+   "drawn_variant": [
+    "('zero', 'zero', 'zero')",
+    "('I', 'comp', 'comp')"
+   ],
+   "native_gates": 48,
+   "native_gates_without_masking": 36,
+   "layers": 22,
+   "duration_us": 3.068,
+   "padlocks": 0,
+   "decoys": [],
+   "mask_pulses": 4,
+   "mask_gates": 12,
+   "twirl_gates": 8,
+   "twirl_x": 0,
+   "twirl_rz": 8,
+   "per_variant": [
+    {
+     "variant": [
+      "('zero', 'zero', 'zero')",
+      "('I', 'comp', 'comp')"
+     ],
+     "native_gates": 48,
+     "layers": 22,
+     "duration_us": 3.068,
+     "mask_pulses": 4,
+     "mask_gates": 12,
+     "twirl_gates": 8,
+     "twirl_x": 0,
+     "twirl_rz": 8
+    },
+    {
+     "variant": [
+      "('zero', 'zero', 'zero')",
+      "('X', 'comp', 'comp')"
+     ],
+     "native_gates": 48,
+     "layers": 21,
+     "duration_us": 3.068,
+     "mask_pulses": 4,
+     "mask_gates": 12,
+     "twirl_gates": 8,
+     "twirl_x": 0,
+     "twirl_rz": 8
+    },
+    {
+     "variant": [
+      "('zero', 'zero', 'zero')",
+      "('Y', 'comp', 'comp')"
+     ],
+     "native_gates": 48,
+     "layers": 22,
+     "duration_us": 3.032,
+     "mask_pulses": 4,
+     "mask_gates": 12,
+     "twirl_gates": 10,
+     "twirl_x": 0,
+     "twirl_rz": 10
+    }
+   ]
+  },
+  {
+   "fragment": "F2",
+   "wires": {
+    "data 0": 15,
+    "data 1": 19,
+    "decoy 1": 14,
+    "decoy 2": 35
+   },
+   "variants": 4,
+   "drawn_variant": [
+    "('zero', 'zero', 'zero', 'zero')",
+    "('comp', 'comp', 'comp', 'comp')"
+   ],
+   "native_gates": 80,
+   "native_gates_without_masking": 38,
+   "layers": 31,
+   "duration_us": 3.116,
+   "padlocks": 2,
+   "decoys": [
+    "decoy 1",
+    "decoy 2"
+   ],
+   "mask_pulses": 14,
+   "mask_gates": 42,
+   "twirl_gates": 8,
+   "twirl_x": 0,
+   "twirl_rz": 8,
+   "per_variant": [
+    {
+     "variant": [
+      "('zero', 'zero', 'zero', 'zero')",
+      "('comp', 'comp', 'comp', 'comp')"
+     ],
+     "native_gates": 80,
+     "layers": 31,
+     "duration_us": 3.116,
+     "mask_pulses": 14,
+     "mask_gates": 42,
+     "twirl_gates": 8,
+     "twirl_x": 0,
+     "twirl_rz": 8
+    },
+    {
+     "variant": [
+      "('one', 'zero', 'zero', 'zero')",
+      "('comp', 'comp', 'comp', 'comp')"
+     ],
+     "native_gates": 83,
+     "layers": 29,
+     "duration_us": 3.116,
+     "mask_pulses": 14,
+     "mask_gates": 42,
+     "twirl_gates": 10,
+     "twirl_x": 0,
+     "twirl_rz": 10
+    },
+    {
+     "variant": [
+      "('plus', 'zero', 'zero', 'zero')",
+      "('comp', 'comp', 'comp', 'comp')"
+     ],
+     "native_gates": 81,
+     "layers": 31,
+     "duration_us": 3.116,
+     "mask_pulses": 14,
+     "mask_gates": 42,
+     "twirl_gates": 10,
+     "twirl_x": 0,
+     "twirl_rz": 10
+    },
+    {
+     "variant": [
+      "('plusI', 'zero', 'zero', 'zero')",
+      "('comp', 'comp', 'comp', 'comp')"
+     ],
+     "native_gates": 85,
+     "layers": 29,
+     "duration_us": 3.116,
+     "mask_pulses": 14,
+     "mask_gates": 42,
+     "twirl_gates": 12,
+     "twirl_x": 0,
+     "twirl_rz": 12
+    }
+   ]
+  }
+ ]
+}

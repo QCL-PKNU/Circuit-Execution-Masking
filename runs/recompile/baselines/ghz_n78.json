@@ -1,0 +1,46 @@
+{
+ "circuit": "ghz_n78",
+ "rows": [
+  {
+   "circuit": "ghz_n78",
+   "n": 78,
+   "method": "original",
+   "normged_compiled": 0.0,
+   "normged_recompiled": 0.23358307624504188,
+   "normged_recompiled_fixed_layout": 0.04095112285336856,
+   "gates_compiled": 2016,
+   "gates_recompiled_fixed_layout": 2028
+  },
+  {
+   "circuit": "ghz_n78",
+   "n": 78,
+   "method": "inverse gates",
+   "normged_compiled": 0.9851479839862739,
+   "normged_recompiled": 0.9853617097379952,
+   "normged_recompiled_fixed_layout": 0.9851918089957972,
+   "gates_compiled": 97281,
+   "gates_recompiled_fixed_layout": 97207
+  },
+  {
+   "circuit": "ghz_n78",
+   "n": 78,
+   "method": "composite gates",
+   "normged_compiled": 0.2159270998415214,
+   "normged_recompiled": 0.3547486033519553,
+   "normged_recompiled_fixed_layout": 0.21650717703349281,
+   "gates_compiled": 2281,
+   "gates_recompiled_fixed_layout": 2265
+  },
+  {
+   "circuit": "ghz_n78",
+   "n": 78,
+   "method": "delayed gates",
+   "normged_compiled": 0.07545533391153512,
+   "normged_recompiled": 0.254458460200087,
+   "normged_recompiled_fixed_layout": 0.09375,
+   "gates_compiled": 2063,
+   "gates_recompiled_fixed_layout": 2061
+  }
+ ],
+ "seconds": 139.5
+}

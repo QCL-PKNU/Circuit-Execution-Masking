@@ -1,0 +1,14 @@
+{
+ "bv_n3": {
+  "source": "mqt.bench get_benchmark('bv', BenchmarkLevel.ALG, 3, hidden_string='11')",
+  "hidden_string": "11",
+  "qubits": 3,
+  "note": "q0 = flag qubit (not measured in MQT); inputs q1..q2"
+ },
+ "bv_n4": {
+  "source": "mqt.bench get_benchmark('bv', BenchmarkLevel.ALG, 4, hidden_string='111')",
+  "hidden_string": "111",
+  "qubits": 4,
+  "note": "q0 = flag qubit (not measured in MQT); inputs q1..q3"
+ }
+}

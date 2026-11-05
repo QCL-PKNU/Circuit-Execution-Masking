@@ -1,0 +1,12 @@
+# ECQCO baseline environment (ecqco-env), Python 3.10. Needed ONLY for the ECQCO arm of
+# main.py (RUN_ECQCO=True); main.py calls it as a subprocess. These are the versions
+# ECQCO's own README pins.
+#   python3.10 -m venv ecqco-env && ecqco-env/bin/pip install -r requirements-ecqco.txt
+pyqpanda3==0.3.2
+mindquantum==0.12.0
+sympy==1.14.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+networkx==3.4.2
+matplotlib==3.10.9

@@ -1,0 +1,6 @@
+OK       key 1000 seed 51 (stored 1000 seed 51)
+OK       protected circuit 40 gates (stored 40), gate by gate
+OK       decoy wires [2, 3], data wires [0, 1, 4, 5]
+OK       original recompiled on calibration 2026-10-24 23:11:05+09:00 equals the submitted circuit
+OK       cut: 2 fragments, 7 variants, RX pair angles reproduced
+OK       every fragment variant rebuilt equals the submitted one

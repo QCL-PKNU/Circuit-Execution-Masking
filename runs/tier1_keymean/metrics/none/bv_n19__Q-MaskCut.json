@@ -1,0 +1,56 @@
+[
+ {
+  "circuit": "bv_n19",
+  "backend": "none",
+  "n": 19,
+  "gates": 56,
+  "two_q": 18,
+  "max_tvd": null,
+  "method": "Q-MaskCut",
+  "twirl_gates_whole": 177,
+  "dd_gates_whole": 2082,
+  "key": "0010100000101001100",
+  "key_is_best": null,
+  "key_seed": 42,
+  "normged_logical": 0.2585034013605442,
+  "normged_logical_kind": "bound",
+  "normged": 0.930739299610895,
+  "ged2q": 0.2907801418439716,
+  "qubits": 21,
+  "decodable": true,
+  "twirl_gates_fragments": 404,
+  "dd_gates_fragments": 5484,
+  "cuts": 1,
+  "widths": "10+12",
+  "instances": 7,
+  "depth": 150,
+  "gates_compiled": 1049,
+  "two_q_compiled": 22,
+  "swaps": 4,
+  "time_us": 5.124,
+  "fidelity": 0.9946648756708217,
+  "tvd_deobf": 0.00538104772567749,
+  "tvd_obf": 0.9999999999999971,
+  "tvd_obf_pieces": [
+   0.9999999999999971
+  ],
+  "tvd_obf_min": 0.9999999999999971,
+  "tvd_ideal": 2.942091015256665e-15,
+  "noise_floor": 0.0067138671875,
+  "operator_check": "n/a: classical reconstruction (exact check: TVD_ideal)",
+  "status": "ok",
+  "bits": {
+   "compiler_view": {
+    "1101011111010110011": 0.500053346157074,
+    "1101011111010110010": 0.4946189522743225,
+    "1101011000101001100": 0.005327701568603516
+   },
+   "reconstructed": {
+    "1111111111111111111": 0.500053346157074,
+    "1111111111111111110": 0.4946189522743225,
+    "1111111000000000000": 0.005327701568603516
+   }
+  },
+  "seconds": 5.0
+ }
+]

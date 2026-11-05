@@ -1,0 +1,17 @@
+benchmark,scheme,reported_normGED
+Bernstein-Vazirani,ECQCO,0.8637
+Bernstein-Vazirani,inverse gates,0.942076
+Bernstein-Vazirani,composite gates,0.581395
+Bernstein-Vazirani,delayed gates,0.946548
+Grover,ECQCO,0.9386
+Grover,inverse gates,0.964697
+Grover,composite gates,0.835659
+Grover,delayed gates,0.9459
+QAOA,ECQCO,0.8845
+QAOA,inverse gates,0.965272
+QAOA,composite gates,0.800948
+QAOA,delayed gates,0.960641
+Shor,ECQCO,0.8389
+Shor,inverse gates,0.902226
+Shor,composite gates,0.632075
+Shor,delayed gates,0.931884

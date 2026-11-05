@@ -1,0 +1,27 @@
+# Main environment (.venv), Python 3.12. Runs main.py, main-ecqco-qmaskcut.py,
+# CutQC (vendored in CutQC/) and every script in scripts/.
+#   python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# Versions are the ones every result in results/ was produced with.
+
+# quantum
+qiskit==2.5.1
+qiskit-aer==0.17.2
+qiskit-ibm-runtime==0.48.0          # fake backends (FakeMontrealV2) and IBM hardware jobs
+qiskit-qasm3-import==0.6.0
+rustworkx==0.18.1
+
+# CutQC's MIP cut search; needs a licence, see README (gurobi.lic is not committed)
+gurobipy==13.0.2
+
+# numerics, graphs, plotting
+numpy==2.5.2
+scipy==1.18.0
+networkx==3.6.1                     # normGED / GED_2Q
+matplotlib==3.11.1
+pandas==3.0.6
+pillow==12.3.0                      # paper-figure scripts
+python-pptx==1.0.2                  # workflow figure (paper_figs/fig_workflow/build.py)
+
+# used inside CutQC
+psutil==7.2.2
+scikit-learn==1.9.0

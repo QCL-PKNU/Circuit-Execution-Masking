@@ -1,0 +1,9 @@
+Circuit-Execution-Masking
+Copyright 2026 Circuit-Execution-Masking contributors.
+
+New source code is licensed under the MIT License (see LICENSE).
+The vendored CutQC source remains under its upstream MIT license:
+Copyright (c) 2021 weiT1993. See CutQC/LICENSE.
+The QASMBench and MQT Bench benchmark circuits retain their upstream licenses (see QASMBench/LICENSE).
+The code of ECQCO and ObfusQate is not included; only circuits and results produced with it are.
+The research manuscript and experimental datasets are not relicensed by this software license notice.

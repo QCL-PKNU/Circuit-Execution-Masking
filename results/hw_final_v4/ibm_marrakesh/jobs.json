@@ -1,0 +1,34 @@
+{
+ "jobs": [
+  [
+   "dbfcqefgdj9s73bbc4e0",
+   0,
+   200
+  ],
+  [
+   "dbfcqfvpc3tc739n6op0",
+   200,
+   400
+  ],
+  [
+   "dbfcqgvgdj9s73bbc4k0",
+   400,
+   449
+  ]
+ ],
+ "account": "pknu4",
+ "backend": "ibm_marrakesh",
+ "shots": 2048,
+ "options": {
+  "dynamical_decoupling": {
+   "enable": false
+  },
+  "twirling": {
+   "enable_gates": false,
+   "enable_measure": false
+  }
+ },
+ "max_pairs_per_gap": 8,
+ "padlocks": 2,
+ "submitted": "2026-10-26 12:47:15"
+}

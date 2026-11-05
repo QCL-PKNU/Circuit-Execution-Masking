@@ -1,0 +1,11 @@
+# Gurobi licence: contains a secret, never commit it
+gurobi.lic
+*.lic
+# logs (Gurobi writes its licence into them)
+*.log
+__pycache__/
+*.pyc
+.venv/
+ecqco-env/
+# baselines' code is not redistributed
+external_benchmarks/

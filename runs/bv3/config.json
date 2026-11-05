@@ -1,0 +1,20 @@
+{
+ "backend_ideal": "AerSimulator noiseless",
+ "backend_noisy": "FakeMontrealV2",
+ "benchmark": "bv_n3 (MQT, secret 11)",
+ "coupling_map": "good qubits (readout<=5%, sx<=1%, 2q<=5%)",
+ "inputs": "10 random U3 states (one U3 per qubit), seed = 1000*iteration + input",
+ "iterations": 20,
+ "methods": [
+  "original",
+  "Q-MaskCut",
+  "inverse gates",
+  "composite gates",
+  "delayed gates",
+  "ECQCO"
+ ],
+ "optimization_level": 3,
+ "q_maskcut": "uniform random key (seed = iteration), 2 decoys + 2 padlocks, H on decoys, CutQC 2 fragments, RX pair at cut, fragments compiled separately (level 3), time-aware twirl + no-pattern DD",
+ "seed_transpiler": 42,
+ "shots": 1024
+}

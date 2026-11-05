@@ -1,0 +1,27 @@
+[
+ {
+  "circuit": "ecqco_grover_n7",
+  "backend": "structure_FakeMarrakesh",
+  "n": 7,
+  "gates": 55,
+  "two_q": 8,
+  "coupling": "good qubits (94)",
+  "method": "Q-MaskCut",
+  "key_mode": "random",
+  "normged": 0.8917306052855924,
+  "ged2q": 0.5106382978723404,
+  "whole_depth": 92,
+  "qubits": 9,
+  "cuts": 3,
+  "widths": "5+5 (+2 uncut pieces, 2 wires)",
+  "fragments": 2,
+  "depth": 86,
+  "gates_compiled": 345,
+  "two_q_compiled": 12,
+  "swaps": 2,
+  "time_us": 3.796,
+  "max_fragment_width": 5,
+  "status": "ok",
+  "seconds": 1.1
+ }
+]

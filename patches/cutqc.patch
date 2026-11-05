@@ -1,0 +1,52 @@
+diff --git a/cutqc/cutter.py b/cutqc/cutter.py
+index ff3274d..49749b8 100644
+--- a/cutqc/cutter.py
++++ b/cutqc/cutter.py
+@@ -133,12 +133,12 @@ class MIP_Model(object):
+         each vertex in exactly one subcircuit
+         """
+         for v in range(self.n_vertices):
++            # expression form: gurobipy >= 12 dropped addConstr(lhs, sense, rhs)
+             self.model.addConstr(
+                 gp.quicksum(
+                     [self.vertex_var[i][v] for i in range(self.num_subcircuit)]
+-                ),
+-                gp.GRB.EQUAL,
+-                1,
++                )
++                == 1
+             )
+ 
+         """
+@@ -334,16 +334,20 @@ def read_circ(circuit):
+         qubit_gate_counter[arg0] += 1
+         qubit_gate_counter[arg1] += 1
+         # logging.info(vertex.op.label,vertex_name,curr_node_id)
+-        if vertex_name not in node_name_ids and id(vertex) not in vertex_ids:
++        # Key on the DAG's own stable node index, not the Python object id:
++        # qiskit >= 1.0 builds a fresh DAGOpNode wrapper on every access to the
++        # Rust-backed DAG, so id() differs between topological_op_nodes() and
++        # edges(). _node_id is present and identical in qiskit 0.46 and 2.x.
++        if vertex_name not in node_name_ids and vertex._node_id not in vertex_ids:
+             node_name_ids[vertex_name] = curr_node_id
+             id_node_names[curr_node_id] = vertex_name
+-            vertex_ids[id(vertex)] = curr_node_id
++            vertex_ids[vertex._node_id] = curr_node_id
+             curr_node_id += 1
+ 
+     for u, v, _ in dag.edges():
+         if isinstance(u, DAGOpNode) and isinstance(v, DAGOpNode):
+-            u_id = vertex_ids[id(u)]
+-            v_id = vertex_ids[id(v)]
++            u_id = vertex_ids[u._node_id]
++            v_id = vertex_ids[v._node_id]
+             edges.append((u_id, v_id))
+ 
+     n_vertices = dag.size()
+@@ -689,4 +693,4 @@ def log_cutter_result(num_cuts, subcircuits, counter):
+             )
+         )
+         subcircuit_info += f"{subcircuits[subcircuit_idx]}"
+-        logging.info(subcircuit_info)
++        logging.info(subcircuit_info)
+\ No newline at end of file

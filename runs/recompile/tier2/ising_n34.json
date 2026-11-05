@@ -1,0 +1,38 @@
+{
+ "circuit": "ising_n34",
+ "n": 34,
+ "backend": "FakeMarrakesh",
+ "normged_before_masking": 0.3347921225382932,
+ "normged_after_masking": 0.6845039018952063,
+ "normged_recompiled": 0.3247311827956989,
+ "normged_original_recompiled": 0.3167420814479638,
+ "normged_recompiled_fixed_layout": 0.3340471092077088,
+ "normged_original_recompiled_fixed_layout": 0.05203619909502263,
+ "gates_before_masking": 441,
+ "gates_after_masking": 881,
+ "gates_recompiled": 449,
+ "depth_before_masking": 21,
+ "depth_after_masking": 43,
+ "depth_recompiled": 19,
+ "fragments": [
+  {
+   "fragment": 0,
+   "width": 19,
+   "gates_before_masking": 222,
+   "gates_after_masking": 496,
+   "gates_recompiled": 224,
+   "normged_masked_vs_unmasked": 0.64746772591857,
+   "normged_recompiled_vs_unmasked": 0.2591792656587473
+  },
+  {
+   "fragment": 1,
+   "width": 18,
+   "gates_before_masking": 228,
+   "gates_after_masking": 374,
+   "gates_recompiled": 230,
+   "normged_masked_vs_unmasked": 0.5261780104712042,
+   "normged_recompiled_vs_unmasked": 0.3277310924369748
+  }
+ ],
+ "seconds": 5.4
+}

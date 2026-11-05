@@ -1,0 +1,46 @@
+{
+ "circuit": "ising_n34",
+ "rows": [
+  {
+   "circuit": "ising_n34",
+   "n": 34,
+   "method": "original",
+   "normged_compiled": 0.0,
+   "normged_recompiled": 0.3167420814479638,
+   "normged_recompiled_fixed_layout": 0.05203619909502263,
+   "gates_compiled": 426,
+   "gates_recompiled_fixed_layout": 409
+  },
+  {
+   "circuit": "ising_n34",
+   "n": 34,
+   "method": "inverse gates",
+   "normged_compiled": 0.9920859400036226,
+   "normged_recompiled": 0.9920795392746085,
+   "normged_recompiled_fixed_layout": 0.9920795392746085,
+   "gates_compiled": 31500,
+   "gates_recompiled_fixed_layout": 31471
+  },
+  {
+   "circuit": "ising_n34",
+   "n": 34,
+   "method": "composite gates",
+   "normged_compiled": 0.18426501035196688,
+   "normged_recompiled": 0.36324786324786323,
+   "normged_recompiled_fixed_layout": 0.17672413793103448,
+   "gates_compiled": 467,
+   "gates_recompiled_fixed_layout": 448
+  },
+  {
+   "circuit": "ising_n34",
+   "n": 34,
+   "method": "delayed gates",
+   "normged_compiled": 0.38876889848812096,
+   "normged_recompiled": 0.3237885462555066,
+   "normged_recompiled_fixed_layout": 0.37193763919821826,
+   "gates_compiled": 447,
+   "gates_recompiled_fixed_layout": 433
+  }
+ ],
+ "seconds": 17.1
+}

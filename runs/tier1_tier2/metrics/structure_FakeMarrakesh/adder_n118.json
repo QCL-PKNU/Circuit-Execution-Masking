@@ -1,0 +1,44 @@
+[
+ {
+  "circuit": "adder_n118",
+  "backend": "structure_FakeMarrakesh",
+  "n": 118,
+  "method": "original",
+  "status": "not computed: normGED on the compiled circuit did not finish (10 h with inverse gates, 50 min without)"
+ },
+ {
+  "circuit": "adder_n118",
+  "backend": "structure_FakeMarrakesh",
+  "n": 118,
+  "method": "Q-MaskCut",
+  "status": "not computed: normGED on the compiled circuit did not finish (10 h with inverse gates, 50 min without)"
+ },
+ {
+  "circuit": "adder_n118",
+  "backend": "structure_FakeMarrakesh",
+  "n": 118,
+  "method": "inverse gates",
+  "status": "not computed: normGED on the compiled circuit did not finish (10 h with inverse gates, 50 min without)"
+ },
+ {
+  "circuit": "adder_n118",
+  "backend": "structure_FakeMarrakesh",
+  "n": 118,
+  "method": "composite gates",
+  "status": "not computed: normGED on the compiled circuit did not finish (10 h with inverse gates, 50 min without)"
+ },
+ {
+  "circuit": "adder_n118",
+  "backend": "structure_FakeMarrakesh",
+  "n": 118,
+  "method": "delayed gates",
+  "status": "not computed: normGED on the compiled circuit did not finish (10 h with inverse gates, 50 min without)"
+ },
+ {
+  "circuit": "adder_n118",
+  "backend": "structure_FakeMarrakesh",
+  "n": 118,
+  "method": "ECQCO",
+  "status": "not computed: normGED on the compiled circuit did not finish (10 h with inverse gates, 50 min without)"
+ }
+]
