@@ -56,6 +56,24 @@ released implementation under `external_benchmarks/obfusqate/` and ECQCO's imple
 `src/qmaskcut/config.py` for the exact paths. The circuits and results they produced in our runs are included. Without their code, run Q-MaskCut and the
 original only: `--methods original Q-MaskCut` (`qmaskcut_eval.py`, `tier2_structure.py`).
 
+## Package versions and seeds
+
+Package versions are pinned in `requirements.txt` (Qiskit 2.5.1, Qiskit Aer 0.17.2, qiskit-ibm-runtime 0.48.0);
+CutQC is vendored in `CutQC/` with the changes in `patches/cutqc.patch`. Every result uses these seeds:
+
+| What | Seed | Where |
+|---|---|---|
+| Global seed | 42 | `SEED` in `src/qmaskcut/config.py` |
+| Compilation (Tier 1, Tier 2, hardware) | optimisation level 3; best of 8 compilations with `seed_transpiler` 42 to 49, by estimated success probability; every variant of a fragment reuses that layout with seed 42 | `best()` in `scripts/new_workflow_test.py`, `--best-of 8` |
+| Key, decoys and padlocks (Tier 1, Tier 2) | 42 (`--seed`); random key = the first draw of this seed | `protect_general(seed=...)`, `--key-mode uniform` |
+| Rotation pair across each cut | `random.Random(1000 + seed)`, angle uniform in [0, 2π) | `qmaskcut_eval.py`, `tier2_structure.py`, `recompile_check.py` |
+| Masking after compilation | 42 for the whole circuit, 42 + j for fragment variant j | `mask(..., seed)` |
+| Aer simulator (Tier 1) | `seed × 10^7 + role × 10^5 + 1`, one per run and fragment variant, spaced so that no two runs share shots | `seedb()` in `qmaskcut_eval.py`; each seed is saved with its counts |
+| BV-3 study | `seed_transpiler` 42; input state seed 1000 × iteration + input; protection seed 100 × iteration | `trackb_bv3.py` |
+| Second compilation | `seed_transpiler` 42 | `recompile_check.py` |
+| GED upper bound (local search) | 42 | `src/qmaskcut/metrics/normged.py` |
+| Keys sampled for the key-averaged TVD (17 and 19 wires) | `numpy.random.default_rng(0)`, 20,000 keys | `tvd_key_mean.py` |
+
 ## Experiments
 
 The figures and tables are rebuilt from the saved results in a few minutes, without simulation, Gurobi or device time:
